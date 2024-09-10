@@ -1,0 +1,67 @@
+{
+ "signatures": [
+  {
+   "keyid": "99ea40e738c7ade218e44fe838cbe3f4765761c27be7015ecf6c57384461fbb6",
+   "sig": ""
+  }
+ ],
+ "signed": {
+  "_type": "root",
+  "consistent_snapshot": true,
+  "expires": "2025-09-10T18:57:30Z",
+  "keys": {
+   "3ba1d55f38582997a646ee0812dd01a2ca7c3385fb14349cc42ace8bdfb002c2": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "https://github.com/dtroyer-salad/toc/.github/workflows/online-sign.yml@refs/heads/main",
+     "issuer": "https://token.actions.githubusercontent.com"
+    },
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-online-uri": "sigstore:"
+   },
+   "99ea40e738c7ade218e44fe838cbe3f4765761c27be7015ecf6c57384461fbb6": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "dean.troyer@salad.com",
+     "issuer": "https://github.com/login/oauth"
+    },
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-keyowner": "@dtroyer-salad"
+   }
+  },
+  "roles": {
+   "root": {
+    "keyids": [
+     "99ea40e738c7ade218e44fe838cbe3f4765761c27be7015ecf6c57384461fbb6"
+    ],
+    "threshold": 1
+   },
+   "snapshot": {
+    "keyids": [
+     "3ba1d55f38582997a646ee0812dd01a2ca7c3385fb14349cc42ace8bdfb002c2"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 365,
+    "x-tuf-on-ci-signing-period": 60
+   },
+   "targets": {
+    "keyids": [
+     "99ea40e738c7ade218e44fe838cbe3f4765761c27be7015ecf6c57384461fbb6"
+    ],
+    "threshold": 1
+   },
+   "timestamp": {
+    "keyids": [
+     "3ba1d55f38582997a646ee0812dd01a2ca7c3385fb14349cc42ace8bdfb002c2"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 2,
+    "x-tuf-on-ci-signing-period": 1
+   }
+  },
+  "spec_version": "1.0.31",
+  "version": 1,
+  "x-tuf-on-ci-expiry-period": 365,
+  "x-tuf-on-ci-signing-period": 60
+ }
+}
